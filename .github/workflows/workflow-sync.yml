@@ -97,6 +97,10 @@ jobs:
         with:
           java-version: 17
           distribution: 'zulu'
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.5
+        with:
+          maven-version: 3.8.2
       - name: Make mvnw executable
         run: chmod +x ./mvnw
       - uses: jfrog/frogbot@v2
