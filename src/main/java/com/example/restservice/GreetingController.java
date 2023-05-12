@@ -32,53 +32,53 @@ public class GreetingController {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test1")
-	public Greeting test1(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test12222")
+	public Greeting test12222(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test2")
-	public Greeting test2(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test2333")
+	public Greeting test2333(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test33")
-	public Greeting test3(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test334444")
+	public Greeting test3444(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test4")
-	public Greeting test4(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test5554")
+	public Greeting test5554(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test5")
-	public Greeting test5(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test5131231")
+	public Greeting test5123123(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test7")
-	public Greeting test7(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test71412")
+	public Greeting test71231(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test6")
-	public Greeting tes6t(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test12316")
+	public Greeting tes6123123t(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test22")
-	public Greeting test12(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test225123123")
+	public Greeting test14567442(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test532")
-	public Greeting test123123(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test5312312")
+	public Greeting test12374554123(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 	
-	@GetMapping("/test765123")
-	public Greeting test123123123(@RequestParam(value = "name", defaultValue = "World") String name) {
+	@GetMapping("/test7614235123")
+	public Greeting test123128657543123(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 }
