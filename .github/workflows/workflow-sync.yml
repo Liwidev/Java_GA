@@ -99,8 +99,6 @@ jobs:
           distribution: 'zulu'
       - name: Make mvnw executable
         run: chmod +x ./mvnw
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
       - uses: jfrog/frogbot@v2
         env:
           JF_URL: ${{ secrets.JF_URL }}
