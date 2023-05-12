@@ -67,18 +67,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-#   TruffleHog:
-#     needs: Checkout
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/download-artifact@master
-#         with:
-#           name: checkout-project
-#           path: ./
-#       - name: TruffleHog OSS
-#         uses: trufflesecurity/trufflehog@main
-#         with:
-#           path: ./
-#           base: ${{ github.event.repository.default_branch }}
-#           head: HEAD
-#           extra_args: --debug --only-verified
+  TruffleHog:
+    needs: Checkout
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: checkout-project
+          path: ./
+      - name: TruffleHog OSS
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+          extra_args: --debug --only-verified
