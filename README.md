@@ -1,2 +1,2 @@
 # GitHubActionsPoC
-New Change 1
+New Change
