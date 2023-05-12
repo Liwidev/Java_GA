@@ -90,18 +90,15 @@ jobs:
     needs: Checkout
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         with:
-          ref: ${{ github.head_ref }}   # checkout the correct branch name
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0     
-      - name: Set up JDK 17
+      - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: 17
-          distribution: 'zulu'
-      - name: Make mvnw executable
-        run: chmod +x ./mvnw
+          java-version: "11"
+          distribution: "temurin"
       - uses: jfrog/frogbot@v2
         env:
           JF_URL: ${{ secrets.JF_URL }}
